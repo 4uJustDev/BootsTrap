@@ -1,0 +1,83 @@
+/*Google Fonts
+    font-family: 'Comforter', cursive; /But
+    font-family: 'Inconsolata', monospace; /line
+    font-family: 'Rubik Beastly', cursive; /shining
+    font-family: 'Sedgwick Ave', cursive; /graphiti
+*/
+/*Main*/
+:root {
+  --main: #14211a;
+  --main1: #49241c;
+  --main2: #591818;
+  --main3: #8c1111;
+  --main4: #bf2011;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  color: aqua;
+}
+a:hover {
+  color: white;
+}
+::selection {
+  color: var(--main4);
+}
+a.knopka {
+  color: white; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: var(--main3); /* фон кнопки */
+  padding: 0.7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+
+/*BooysStrap*/
+.dropdown-toggle::after {
+  display: none !important;
+}
+/*Header*/
+header {
+  margin-top: 20px;
+  font-family: "Inconsolata", monospace;
+  color: white;
+}
+/*Body*/
+body {
+  color: aqua;
+  background-color: var(--main);
+}
+.Body_Cards {
+  margin-top: 20px;
+}
+/*Text*/
+.Text_Game {
+  font-family: "Sedgwick Ave", cursive;
+  color: var(--main3);
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: black;
+  font-family: "Sedgwick Ave", cursive;
+}
+input[type="text"]::-moz-placeholder {
+  color: black;
+  font-family: "Sedgwick Ave", cursive;
+}
+input:focus {
+  color: black;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+/*Images*/
+.Ico_Search {
+  width: 20px;
+}
+.Ico_Cross {
+  width: 20px;
+}
+/*Colors*/
+.Color1 {
+  color: var(--main3);
+}

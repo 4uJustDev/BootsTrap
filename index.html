@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootsTrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Inconsolata:wght@300&family=Rubik+Beastly&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-sm-12 col-md-4 col-xxl-3" >
+                    <a class="text-uppercase mb5 Text_Game" href="#"><p>Game store</p></a>
+                </div>
+                <div class="col-sm-12 col-md-8 col-xxl-4">
+                    <div class="input-group mb-3">
+                        <button class="btn btn-outline-secondary" type="Delete_text" id="button-addon1" onclick="ClearField()"><img src="img/Ico_Cross.svg" alt="Ico_Cross" class="Ico_Cross"></button>
+                        <input id="HeaderButton" type="text" class="text-center form-control" placeholder="Search a game" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"><img src="img/Ico_Search.svg" alt="Ico_Search" class="Ico_Search"></button>
+                    </div>
+                </div>
+                <div class="text-center col-sm-12 col-xxl-5">
+                    <div class="row gy-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Info about 
+                                    <span><img width="20px" src="img/Ico_Info.svg" alt=""></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Site</a></li>
+                                  <li><a class="dropdown-item" href="#">License</a></li>
+                                  <li><a class="dropdown-item" href="#">Creators</a></li>
+                                  <li><a class="dropdown-item" href="#">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 ">
+                            <a class="Color1" href="#"><p class="Text_Game">Donation</p></a>
+                        </div>  
+                        <div class=" text-center col-6 col-sm-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Upload
+                                    <span><img width="20px" src="img/Ico_Upload.svg" alt=""></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Your game</a></li>
+                                  <li><a class="dropdown-item" href="#">Achivement</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center col-6 col-sm-3">
+                            <div class="btn-group">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sign Up
+                                    <span><img width="20px" src="img/Ico_SignUp.svg" alt=""></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                                  <li><p class="dropdown-item">Don't have an account?</p></li>
+                                  <li><a href="#"><p class="text-center">Sign up here.</p></a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item text-center btn knopka" href="#">Log In</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="Body_Cards">
+        <div class="container">
+            <div class="row gy-4 justify-content-end">
+                <div class="col-sm-4 col-xl-3 text-center">
+                    <div class="dropdown">
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>Popular Last 7 Days</option>
+                            <option value="1">Popular Last 30 Days</option>
+                            <option value="2">Popular This Year</option>
+                            <option value="3">Popular All Time</option>
+                        </select>
+                    </div>
+                </div>        
+                <div class="col-sm-4 col-xl-3 text-center">
+                    <div class="dropdown">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                              Everything
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li><button class="dropdown-item" type="button">Robots</button></li>
+                              <li><button class="dropdown-item" type="button">Minecraft</button></li>
+                              <li><button class="dropdown-item" type="button">Sand</button></li>
+                              <li><button class="dropdown-item" type="button">Warcraft</button></li>
+                              <li><button class="dropdown-item" type="button">The Witcher</button></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>          
+                <div class="col-sm-4 col-xl-3 text-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter by
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                          Price
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label " for="flexRadioDefault1">
+                              less
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              More
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              The most
+                            </label>
+                          </div>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                          3D or 2D?
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              3D
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              2D
+                            </label>
+                          </div>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                          Type of the game                          
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Shooter
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              RPG
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Muzzle
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Chalenge
+                            </label>
+                          </div>
+                      </li>
+                    </ul>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+    </div>
+
+    <!-- JS for BootsTrap-->
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        function ClearField()
+        {
+            document.getElementById("HeaderButton").value = "";
+        }
+      </script>
+</body>
+</html>
