@@ -92,7 +92,7 @@ input:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #9a12b3;
+  background: #000000;
   z-index: 30;
 }
 
@@ -122,4 +122,14 @@ input:focus {
   background: url(images/oval.svg) center center no-repeat;
   background-size: 41px;
   margin: -16px 0 0 -16px;
+}
+.Prelog_Info {
+  font-size: 50px;
+}
+.marginLeft {
+  padding-left: 40px;
+  font-size: 40px;
+}
+.marginTop {
+  margin-top: 20%;
 }
