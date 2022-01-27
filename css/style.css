@@ -41,13 +41,13 @@ a.knopka {
 /*Header*/
 header {
   margin-top: 20px;
-  font-family: "Inconsolata", monospace;
   color: white;
 }
 /*Body*/
 body {
   color: aqua;
   background-color: var(--main);
+  font-family: "Inconsolata", monospace;
 }
 .Body_Cards {
   margin-top: 20px;
