@@ -13,6 +13,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="spinner-border text-danger" role="status">
+      <span class="visually-hidden">Загрузка...</span>
+    </div>
     <header>
         <div class="container">
             <div class="row">
@@ -43,7 +46,7 @@
                             </div>
                         </div>
                         <div class="col-6 col-sm-3 ">
-                            <a class="Color1" href="#"><p class="Text_Game">Donation</p></a>
+                            <a class="Color1" href="#"><p class="Text_Buity pt-2 ">Donation</p></a>
                         </div>  
                         <div class=" text-center col-6 col-sm-3">
                             <div class="dropdown">
@@ -426,12 +429,30 @@
         </div>
     </div>
 
+    <footer>
+      <div class="container mt-4">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <!-- JS for BootsTrap-->
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
         function ClearField()
         {
             document.getElementById("HeaderButton").value = "";
+        }
+      </script>
+      <script>
+        window.onload = function () {
+          document.body.classList.add("spinner-border text-danger");
         }
       </script>
 </body>
