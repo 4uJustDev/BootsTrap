@@ -13,6 +13,12 @@
     <title>Document</title>
 </head>
 <body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
     <header>
         <div class="container">
             <div class="row">
@@ -449,11 +455,11 @@
       </script>
       <script>
         window.onload = function () {
-          <div class="loaded">
-            <div class="spinner-border text-danger" role="status">
-              <span class="visually-hidden">Загрузка...</span>
-            </div>
-          </div>
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
         }
       </script>
 </body>
